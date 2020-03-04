@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.3.0\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.3.0\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{22A30020-26C4-4AA8-A943-4AE9F1AED667}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>EcoScooterGUI</RootNamespace>
+    <AssemblyName>EcoScooterGUI</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.3.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.3.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="FlatButton">
+      <HintPath>..\..\..\..\..\Desktop\ecoscooter_interface\FlatButton.dll</HintPath>
+    </Reference>
+    <Reference Include="JMetroTextBox">
+      <HintPath>..\..\..\..\..\Desktop\ecoscooter_interface\JMetroTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="JTextBox">
+      <HintPath>..\..\..\..\..\Desktop\ecoscooter_interface\JTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="JThinButton">
+      <HintPath>..\..\..\..\..\Desktop\ecoscooter_interface\JThinButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="InicioSesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InicioSesion.Designer.cs">
+      <DependentUpon>InicioSesion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioRegistrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioRegistrar.Designer.cs">
+      <DependentUpon>FormularioRegistrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistrarEstacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrarEstacion.Designer.cs">
+      <DependentUpon>RegistrarEstacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarIncidente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrarIncidente.Designer.cs">
+      <DependentUpon>RegistrarIncidente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarScooter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrarScooter.Designer.cs">
+      <DependentUpon>RegistrarScooter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rutas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rutas.Designer.cs">
+      <DependentUpon>rutas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VistaEmpleadoLoggeado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VistaEmpleadoLoggeado.Designer.cs">
+      <DependentUpon>VistaEmpleadoLoggeado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VistaUsuarioLoggeado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VistaUsuarioLoggeado.Designer.cs">
+      <DependentUpon>VistaUsuarioLoggeado.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="InicioSesion.resx">
+      <DependentUpon>InicioSesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioRegistrar.resx">
+      <DependentUpon>FormularioRegistrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RegistrarEstacion.resx">
+      <DependentUpon>RegistrarEstacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrarIncidente.resx">
+      <DependentUpon>RegistrarIncidente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrarScooter.resx">
+      <DependentUpon>RegistrarScooter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rutas.resx">
+      <DependentUpon>rutas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VistaEmpleadoLoggeado.resx">
+      <DependentUpon>VistaEmpleadoLoggeado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VistaUsuarioLoggeado.resx">
+      <DependentUpon>VistaUsuarioLoggeado.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClassLibrary\EcoScooterClassLibrary.csproj">
+      <Project>{d9325b70-c82e-4b50-900c-6808fbb45c44}</Project>
+      <Name>EcoScooterClassLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eco_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo_4k.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scooter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo_4kv2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\friend+human+man+member+person+profile+user+users+icon-1320168707291252637.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\locked+log+login+padlock+password+private+protection+register-1320168712292066823.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_app.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\preview+see+seen+view+icon-1320168711570288480.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\return.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rent1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\news.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newstation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adminlogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_logo.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.3.0\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.3.0\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.3.0\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.3.0\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.3.0\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.3.0\build\EntityFramework.targets')" />
+</Project>
