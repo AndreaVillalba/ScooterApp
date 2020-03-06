@@ -7,9 +7,9 @@ La aplicación esta hecha mateniendo la separación de capas: persistencia, lóg
 - Para conseguir la capa de **logica**: *ClassLibrary/BusinessLogic*
 - Para conseguir la capa de **presentacion**: *EcoScooterGUI*
 
-Para persistir los datos se utilizo EntityFramework y DBContext cuya implementacion se puede ver en la carpeta de *ClassLibrary/Persistencia*.
+Para persistir los datos se utilizó EntityFramework y DBContext cuya implementación se puede ver en la carpeta de *ClassLibrary/Persistencia*.
 
-La conexión entre la capa logica y la de presentacion se realizo en la clase llamada **EcoScooterService y IEcoScooterService**, la cual esta localizada en: *ClassLibrary/BusinessLogic/Services*.
+La conexión entre la capa logica y la de presentación se realizó en la clase llamada **EcoScooterService y IEcoScooterService**, la cual está localizada en: *ClassLibrary/BusinessLogic/Services*.
 
-Adicionalmente las otras carpetas se utilizaron para realizarle diversas pruebas a las capas mencionadas previamente, para comprbar la prevención de errores y el cumplimiento de los casos de uso.
+Adicionalmente las otras carpetas se utilizaron para realizarle diversas pruebas a las capas mencionadas previamente, para comprobar la prevención de errores y el cumplimiento de los casos de uso.
 
