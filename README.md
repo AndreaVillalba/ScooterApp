@@ -4,8 +4,8 @@ Aplicación web en c# encargada de controlar los alquileres y devoluciones de sc
 La aplicación esta hecha mateniendo la separación de capas: persistencia, lógica, presentación.
 
 - Para conseguir la capa de **persistencia**: *ClassLibrary/Persistencia*
-- Para conseguir la capa de **logica**: *ClassLibrary/BusinessLogic*
-- Para conseguir la capa de **presentacion**: *EcoScooterGUI*
+- Para conseguir la capa de **lógica**: *ClassLibrary/BusinessLogic*
+- Para conseguir la capa de **presentación**: *EcoScooterGUI*
 
 Para persistir los datos se utilizó EntityFramework y DBContext cuya implementación se puede ver en la carpeta de *ClassLibrary/Persistencia*.
 
